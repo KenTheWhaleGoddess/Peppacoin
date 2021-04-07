@@ -153,7 +153,7 @@ to see it.
 
 **testnet and regtest modes**
 
-Run with the -testnet option to run with "play garlicoins" on the test network, if you
+Run with the -testnet option to run with "play peppacoins" on the test network, if you
 are testing multi-machine code that needs to operate across the internet.
 
 If you are testing something that can run on one machine, run with the -regtest option.
@@ -162,7 +162,7 @@ that run in -regtest mode.
 
 **DEBUG_LOCKORDER**
 
-Garlicoin Core is a multithreaded application, and deadlocks or other multithreading bugs
+Peppacoin Core is a multithreaded application, and deadlocks or other multithreading bugs
 can be very difficult to track down. Compiling with -DDEBUG_LOCKORDER (configure
 CXXFLAGS="-DDEBUG_LOCKORDER -g") inserts run-time checks to keep track of which locks
 are held, and adds warnings to the debug.log file if inconsistencies are detected.
@@ -242,7 +242,7 @@ Threads
 
 - ThreadRPCServer : Remote procedure call handler, listens on port 42068 for connections and services them.
 
-- BitcoinMiner : Generates garlicoins (if wallet is enabled).
+- BitcoinMiner : Generates peppacoins (if wallet is enabled).
 
 - Shutdown : Does an orderly shutdown of everything.
 
@@ -648,7 +648,7 @@ A few guidelines for introducing and reviewing new RPC interfaces:
 - Try not to overload methods on argument type. E.g. don't make `getblock(true)` and `getblock("hash")`
   do different things.
 
-  - *Rationale*: This is impossible to use with `garlicoin-cli`, and can be surprising to users.
+  - *Rationale*: This is impossible to use with `peppacoin-cli`, and can be surprising to users.
 
   - *Exception*: Some RPC calls can take both an `int` and `bool`, most notably when a bool was switched
     to a multi-value, or due to other historical reasons. **Always** have false map to 0 and
@@ -667,7 +667,7 @@ A few guidelines for introducing and reviewing new RPC interfaces:
 
 - Add every non-string RPC argument `(method, idx, name)` to the table `vRPCConvertParams` in `rpc/client.cpp`.
 
-  - *Rationale*: `garlicoin-cli` and the GUI debug console use this table to determine how to
+  - *Rationale*: `peppacoin-cli` and the GUI debug console use this table to determine how to
     convert a plaintext command line to JSON. If the types don't match, the method can be unusable
     from there.
 

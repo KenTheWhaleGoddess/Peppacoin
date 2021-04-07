@@ -25,12 +25,12 @@ python27
 
 Download the source code:
 ```
-git clone https://github.com/GarlicoinOrg/Garlicoin
+git clone https://github.com/KenTheWhaleGoddess/Peppacoin
 ```
 
 See [dependencies.md](dependencies.md) for a complete overview.
 
-### Building Garlicoin Core
+### Building Peppacoin Core
 
 **Important**: Use `gmake` (the non-GNU `make` will exit with an error).
 

@@ -33,14 +33,14 @@ NOTE: Building with Qt4 is still supported, however, could result in a broken UI
 Build Garlicoin Core
 ------------------------
 
-1. Clone the garlicoin source code and cd into `garlicoin`
+1. Clone the peppacoin source code and cd into `peppacoin`
 
-        git clone https://github.com/GarlicoinOrg/Garlicoin
-        cd garlicoin
+        git clone https://github.com/KenTheWhaleGoddess/Peppacoin
+        cd peppacoin
 
-2.  Build garlicoin-core:
+2.  Build peppacoin-core:
 
-    Configure and build the headless garlicoin binaries as well as the GUI (if Qt is found).
+    Configure and build the headless peppacoin binaries as well as the GUI (if Qt is found).
 
     You can disable the GUI build by passing `--without-gui` to configure.
 
@@ -62,22 +62,22 @@ Build Garlicoin Core
 
     or
 
-        cd ~/garlicoin/src
+        cd ~/peppacoin/src
         cp litecoind /usr/local/bin/
-        cp garlicoin-cli /usr/local/bin/
+        cp peppacoin-cli /usr/local/bin/
 
 Running
 -------
 
-Garlicoin Core is now available at `./src/garlicoind`
+Garlicoin Core is now available at `./src/peppacoind`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=garlicoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Garlicoin/garlicoin.conf"
+    echo -e "rpcuser=peppacoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Peppacoin/peppacoin.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/Garlicoin/garlicoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Garlicoin/peppacoin.conf"
 
-The first time you run garlicoind, it will start downloading the blockchain. This process could take several hours.
+The first time you run peppacoind, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
@@ -86,20 +86,20 @@ You can monitor the download process by looking at the debug.log file:
 Other commands:
 -------
 
-    ./src/garlicoind -daemon # Starts the garlicoin daemon.
-    ./src/garlicoin-cli --help # Outputs a list of command-line options.
-    ./src/garlicoin-cli help # Outputs a list of RPC commands when the daemon is running.
+    ./src/peppacoind -daemon # Starts the peppacoin daemon.
+    ./src/peppacoin-cli --help # Outputs a list of command-line options.
+    ./src/peppacoin-cli help # Outputs a list of RPC commands when the daemon is running.
 
 Using Qt Creator as IDE
 ------------------------
-You can use Qt Creator as an IDE, for garlicoin development.
+You can use Qt Creator as an IDE, for peppacoin development.
 Download and install the community edition of [Qt Creator](https://www.qt.io/download/).
 Uncheck everything except Qt Creator during the installation process.
 
 1. Make sure you installed everything through Homebrew mentioned above
 2. Do a proper ./configure --enable-debug
 3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
-4. Enter "garlicoin-qt" as project name, enter src/qt as location
+4. Enter "peppacoin-qt" as project name, enter src/qt as location
 5. Leave the file selection as it is
 6. Confirm the "summary page"
 7. In the "Projects" tab select "Manage Kits..."

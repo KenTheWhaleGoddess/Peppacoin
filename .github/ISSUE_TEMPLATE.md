@@ -1,6 +1,6 @@
-<!-- This issue tracker is only for technical issues related to Garlicoin Core.
+<!-- This issue tracker is only for technical issues related to PeppaCoin Core.
 
-This issue tracker is only for technical issues related to garlicoin-core.
+This issue tracker is only for technical issues related to peppacoin-core.
 
 General garlicoin questions and/or support requests and are best directed to the [garlicoin subreddit](https://www.reddit.com/r/garlicoin/) or [garlicoin discord server](https://discord.gg/garlicoin).
 
@@ -11,7 +11,7 @@ General garlicoin questions and/or support requests and are best directed to the
 
 <!--- How reliably can you reproduce the issue, what are the steps to do so? -->
 
-<!-- What version of Garlicoin Core are you using, where did you get it (website, self-compiled, etc)? -->
+<!-- What version of PeppaCoin Core are you using, where did you get it (website, self-compiled, etc)? -->
 
 <!-- What type of machine are you observing the error on (OS/CPU and disk type)? -->
 
